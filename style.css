@@ -1,1 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+}
+
+h1 {
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 30px 40px;
+}
+
+h2 {
+    color: #58a6ff;
+    margin-bottom: 15px;
+}
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.repo-card {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+.repo-card h3 {
+    color: #58a6ff;
+}
+
+.repo-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #238636;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.repo-card a:hover {
+    background: #2ea043;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #8b949e;
+}
 

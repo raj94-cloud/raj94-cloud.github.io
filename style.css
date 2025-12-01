@@ -1,43 +1,102 @@
+/* Global */
 body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0d1117;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0d1117;
     color: #c9d1d9;
 }
 
-header {
+/* Hero Section */
+.hero {
     text-align: center;
-    padding: 40px;
-    background: #161b22;
-    border-bottom: 1px solid #30363d;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1f2937, #0d1117);
 }
 
-h1 {
+.hero h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.hero h1 span {
     color: #58a6ff;
-    margin-bottom: 10px;
 }
 
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #238636;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2ea043;
+}
+
+/* Fade Animations */
+.fade-in {animation: fade 1.5s forwards;}
+.fade-in-delay {animation: fade 2.2s forwards;}
+.fade-in-delay2 {animation: fade 3s forwards;}
+
+@keyframes fade {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+/* Sections */
 section {
-    padding: 30px 40px;
+    padding: 50px 40px;
 }
 
 h2 {
     color: #58a6ff;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
+/* Skills */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #30363d;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    border-color: #58a6ff;
+}
+
+/* Repo Cards */
 .repo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .repo-card {
     background: #161b22;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid #30363d;
+    transition: 0.3s;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
 }
 
 .repo-card h3 {
@@ -49,7 +108,7 @@ h2 {
     margin-top: 10px;
     background: #238636;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 6px;
     color: white;
     text-decoration: none;
 }
@@ -58,9 +117,16 @@ h2 {
     background: #2ea043;
 }
 
+/* Contact */
+#contact a {
+    color: #58a6ff;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
+    border-top: 1px solid #30363d;
+    margin-top: 40px;
     color: #8b949e;
 }
-

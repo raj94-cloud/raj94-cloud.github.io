@@ -1,132 +1,152 @@
-/* Global */
+/* Global Styling */
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0d1117;
-    color: #c9d1d9;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #222;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #1f2937, #0d1117);
-}
-
-.hero h1 {
-    font-size: 50px;
-    color: #fff;
-}
-
-.hero h1 span {
-    color: #58a6ff;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #238636;
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0056ff;
+    padding: 15px 40px;
     color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    background: #2ea043;
+.logo {
+    font-size: 26px;
+    font-weight: bold;
 }
 
-/* Fade Animations */
-.fade-in {animation: fade 1.5s forwards;}
-.fade-in-delay {animation: fade 2.2s forwards;}
-.fade-in-delay2 {animation: fade 3s forwards;}
-
-@keyframes fade {
-    0% {opacity: 0; transform: translateY(20px);}
-    100% {opacity: 1; transform: translateY(0);}
-}
-
-/* Sections */
-section {
-    padding: 50px 40px;
-}
-
-h2 {
-    color: #58a6ff;
-    margin-bottom: 20px;
-}
-
-/* Skills */
-.skill-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.skill-card {
-    background: #161b22;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    border: 1px solid #30363d;
-    transition: 0.3s;
-}
-
-.skill-card:hover {
-    transform: scale(1.05);
-    border-color: #58a6ff;
-}
-
-/* Repo Cards */
-.repo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.nav-links {
+    list-style: none;
+    display: flex;
     gap: 25px;
 }
 
-.repo-card {
-    background: #161b22;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #30363d;
-    transition: 0.3s;
-}
-
-.repo-card:hover {
-    transform: translateY(-5px);
-    border-color: #58a6ff;
-}
-
-.repo-card h3 {
-    color: #58a6ff;
-}
-
-.repo-card a {
-    display: inline-block;
-    margin-top: 10px;
-    background: #238636;
-    padding: 8px 12px;
-    border-radius: 6px;
+.nav-links a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.repo-card a:hover {
-    background: #2ea043;
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
-/* Contact */
-#contact a {
-    color: #58a6ff;
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #e6ecf8;
 }
 
-/* Footer */
+.hero-section h1 {
+    font-size: 48px;
+    color: #0047d1;
+}
+
+.hero-section p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    color: #444;
+}
+
+.btn-primary {
+    background: #0056ff;
+    padding: 12px 28px;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+    box-shadow: 0px 4px 12px rgba(0, 86, 255, 0.4);
+}
+
+.btn-primary:hover {
+    background: #003bb5;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #0047d1;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    max-width: 900px;
+    margin: auto;
+    color: #444;
+}
+
+/* Certification Card */
+.cert-card {
+    background: white;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.cert-card ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+.cert-card li {
+    padding: 15px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* GitHub Project Cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.project-card h3 {
+    color: #0056ff;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background: #0056ff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+}
+
 footer {
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #30363d;
-    margin-top: 40px;
-    color: #8b949e;
+    background: #0056ff;
+    color: white;
 }
